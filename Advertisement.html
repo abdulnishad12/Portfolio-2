@@ -19,6 +19,7 @@
 
 	<!-- mansonry CDN -->
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 	 <!-- CSS -->
 
@@ -34,23 +35,29 @@
   <script>
 	$('a:contains("Advertisement")').addClass("active");
 
-	$('.grid').masonry({
+	var $grid = $('.grid').masonry({
   		// options
   		itemSelector: '.grid-item',
   		columnWidth: '.grid-sizer',
       percentPosition: true
 		});
+	$grid.imagesLoaded().progress( function() {
+  		$grid.masonry('layout');
+	});
   </script>
 
 <div class="grid">
-  <div class="grid-item grid-item-width1 grid-sizer"><img src="images/adImg/360x360(2).jpg"></div>
-  <div class="grid-item grid-item-width1"><img src="images/adImg/360x360.jpg"></div>
-  <div class="grid-item" style="width:20%;"><img src="images/adImg/800x120.jpg"></div>
-  <div class="grid-item" style="width:970px;"><img src="images/adImg/970x250.jpg"></div>
-    <div class="grid-item" style="width:800px;"><img src="images/adImg/818x370.jpg"></div>
-  <div class="grid-item"><img src="images/adImg/1200x627.jpg"></div>
-  <div class="grid-item"><img src="images/adImg/1796X1288-3.jpg"></div>
-  <div class="grid-item"><img src="images/adImg/2528X1796-2.jpg"><img src="images/adImg/2528X1796.jpg"></div>
+<div class="grid-sizer"></div>
+  <div class="grid-item"><img src="images/adImg/360x360(2).jpg"></div>
+  <div class="grid-item"><img src="images/adImg/360x360.jpg"></div>
+  <div class="grid-item"  style="height:100px;"><img  style="height:100px;" src="images/adImg/800x120.jpg"></div>
+  <div class="grid-item"  style="height:119px;"><img  style="height:119px;" src="images/adImg/970x250.jpg"></div>
+    <div class="grid-item"><img src="images/adImg/818x370.jpg"></div>
+  <div class="grid-item" style="width:40%;height:300px"><img style="height:300px;" src="images/adImg/1200x627.jpg"></div>
+  <div class="grid-item" style="height:300px;" ><img style="height:300px;"  src="images/adImg/1796X1288-3.jpg"></div>
+  <div class="grid-item"><img src="images/adImg/2528X1796-2.jpg"></div>
+  <div class="grid-item"><img src="images/adImg/2528X1796.jpg"></div>
+  
 
 
 

@@ -58,12 +58,16 @@ body { font-family: sans-serif; }
 }
 
 /* ---- grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 33.2%;
+}
 
 .grid-item {
-  width: 20%;
-  height: 100%;
   float: left;
 }
-.grid-item-width1 {
-  width:360px;
+
+.grid-item img {
+  display: block;
+  width: 100.5%;
 }
