@@ -36,7 +36,6 @@ body { font-family: sans-serif; }
 
 .grid {
   background: #EEE;
-  max-width: 1200px;
 }
 
 /* clearfix */
@@ -61,6 +60,7 @@ body { font-family: sans-serif; }
 .grid-sizer,
 .grid-item {
   width: 33.2%;
+  margin-bottom: 10px;
 }
 
 .grid-item {

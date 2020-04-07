@@ -39,7 +39,8 @@
   		// options
   		itemSelector: '.grid-item',
   		columnWidth: '.grid-sizer',
-      percentPosition: true
+      	percentPosition: true,
+	  	gutter: 10
 		});
 	$grid.imagesLoaded().progress( function() {
   		$grid.masonry('layout');
