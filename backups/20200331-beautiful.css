@@ -1,0 +1,29 @@
+    nav {
+      font-family: 'Cinzel', serif;
+    }
+    .marginAuto {
+      margin:auto!important;
+    }
+
+    a{
+      color:#A8A8A8;
+    }
+    a:hover{
+      color:#4F4F4F;
+      text-decoration: none;
+    }
+
+.imgShadow{
+  box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.3);
+}
+
+.wordShadow
+{
+  text-shadow:5px 5px 10px grey;
+}
+.active {
+    color:black; 
+  }
+
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
