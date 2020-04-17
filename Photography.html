@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>May's Photography</title>
 
@@ -8,30 +9,68 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600&display=swap" rel="stylesheet">
 
 	<!-- bootstrap CDN -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	 <!-- CSS -->
+	<!-- CSS -->
 
- 	 <link rel="stylesheet" type="text/css" href="beautiful.css">
+	<link rel="stylesheet" type="text/css" href="beautiful.css">
+
+	<!-- BX Slider -->
+	<script>
+		$(document).ready(function () {
+			$('.slider').bxSlider();
+			mode: fade;
+			adaptiveHeight: true;
+			slideWidth: 600;
+		});
+	</script>
 
 </head>
 
 
 <body>
- 
-  <script src="header.js"></script>
-  
-  <script>
-	$('a:contains("Photography")').addClass("active");
-  </script>
+
+	<script src="header.js"></script>
+	<script>
+		$('a:contains("Photography")').addClass("active");
+	</script>
+
+<!--	<div class="header">
+		<p>Photography</p>
+		<hr>-->
+	</div>
+
+	<div class="slider" style="  display: flex; align-items: center; justify-content: center;">
+		<div><img class="photoImg" src="images\photoImg\1.jpg"></div>
+		<div><img class="photoImg" src="images\photoImg\2.jpg"></div>
+		<div><img class="photoImg" src="images\photoImg\3.jpg "></div>
+		<div><img class="photoImg" src="images\photoImg\4.jpg "></div>
+		<div><img class="photoImg" src="images\photoImg\5.jpg "></div>
+		<div><img class="photoImg" src="images\photoImg\6.jpg "></div>
+		<div><img class="photoImg" src="images\photoImg\7.jpg "></div>
+		<div><img class="photoImg" src="images\photoImg\8.jpg "></div>
+	</div>
+
 
 </body>
+
 </html>

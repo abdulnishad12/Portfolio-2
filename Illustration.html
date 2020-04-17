@@ -18,20 +18,69 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	 <!-- CSS -->
 
- 	 <link rel="stylesheet" type="text/css" href="beautiful.css">
-
+	<link rel="stylesheet" type="text/css" href="beautiful.css">
+	  
+	<!-- rondell -->
+	  <script src="rondell/libs/jquery-1.9.1.min.js"></script>
+	  <script src="rondell/dist/jquery.rondell.js"></script>
+	  <script src="rondell/libs/modernizr-2.0.6.min.js"></script>
+	  <link rel="stylesheet" href="rondell/dist/jquery.rondell.css?v=325" type="text/css" media="all" title="Screen">
+	  
 </head>
 
 
 <body>
  
   <script src="header.js"></script>
-  
   <script>
 	$('a:contains("Illustration")').addClass("active");
+	
   </script>
+
+<script type="text/javascript">
+	$(function() {
+	  $("#rondellCarousel > *").rondell({
+		preset: "carousel",
+		center:{left: 700,top:500},
+		//size:{ width: 700,height:500},
+		radius:{ x: 280, y:0 },
+		lightbox:{enable:false},
+		itemProperties:{
+			delay: 100,
+			cssClass: 'rondellItem',
+			size: {
+				width: 450,
+				height: 450},
+			sizeFocused: {
+				width: 700,
+				height: 700
+			}
+		}
+	  });
+	  $(".rondell-shift-left,.rondell-shift-right").remove();
+	});
+  </script><br>
+
+	<div id="rondellCarousel" style="position: absolute; top: 0%;">
+		<img src="images/illusImg/illu-1.jpg">
+		<img src="images/illusImg/illu-3.jpg">
+		<img src="images/illusImg/illu-4.jpg">
+		<img src="images/illusImg/illu-5.jpg">
+		<img src="images/illusImg/illu-7.jpg">
+		<img src="images/illusImg/illu-8.jpg">
+		<img src="images/illusImg/illu-9.jpg">
+		<img src="images/illusImg/illu-10.jpg">
+		<img src="images/illusImg/illu-11.jpg">
+		<img src="images/illusImg/illu-12.jpg">
+		<img src="images/illusImg/illu-13.jpg">
+		<img src="images/illusImg/illu-14.jpg">
+		<img src="images/illusImg/illu-15.jpg">
+		<img src="images/illusImg/illu-16.jpg">
+		<img src="images/illusImg/illu-17.jpg">
+		<img src="images/illusImg/illu-18.jpg">
+	</div>
+	
 
 </body>
 </html>
