@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>May's Illustration</title>
 
@@ -8,59 +9,67 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600&display=swap" rel="stylesheet">
 
 	<!-- bootstrap CDN -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	<link rel="stylesheet" type="text/css" href="beautiful.css">
-	  
+
 	<!-- rondell -->
-	  <script src="rondell/libs/jquery-1.9.1.min.js"></script>
-	  <script src="rondell/dist/jquery.rondell.js"></script>
-	  <script src="rondell/libs/modernizr-2.0.6.min.js"></script>
-	  <link rel="stylesheet" href="rondell/dist/jquery.rondell.css?v=325" type="text/css" media="all" title="Screen">
-	  
+	<script src="rondell/libs/jquery-1.9.1.min.js"></script>
+	<script src="rondell/dist/jquery.rondell.js"></script>
+	<script src="rondell/libs/modernizr-2.0.6.min.js"></script>
+	<link rel="stylesheet" href="rondell/dist/jquery.rondell.css?v=325" type="text/css" media="all" title="Screen">
+
 </head>
 
 
 <body>
- 
-  <script src="header.js"></script>
-  <script>
-	$('a:contains("Illustration")').addClass("active");
-	
-  </script>
 
-<script type="text/javascript">
-	$(function() {
-	  $("#rondellCarousel > *").rondell({
-		preset: "carousel",
-		center:{left: 700,top:500},
-		//size:{ width: 700,height:500},
-		radius:{ x: 280, y:0 },
-		lightbox:{enable:false},
-		itemProperties:{
-			delay: 100,
-			cssClass: 'rondellItem',
-			size: {
-				width: 450,
-				height: 450},
-			sizeFocused: {
-				width: 700,
-				height: 700
-			}
-		}
-	  });
-	  $(".rondell-shift-left,.rondell-shift-right").remove();
-	});
-  </script><br>
+	<script src="header.js"></script>
+	<script>
+		$('a:contains("Illustration")').addClass("active");
+
+	</script>
+
+	<script type="text/javascript">
+		$(function () {
+			$("#rondellCarousel > *").rondell({
+				preset: "carousel",
+				center: { left: 700, top: 500 },
+				//size:{ width: 700,height:500},
+				radius: { x: 280, y: 0 },
+				lightbox: { enable: false },
+				itemProperties: {
+					delay: 100,
+					cssClass: 'rondellItem',
+					size: {
+						width: 450,
+						height: 450
+					},
+					sizeFocused: {
+						width: 700,
+						height: 700
+					}
+				}
+			});
+			$(".rondell-shift-left,.rondell-shift-right").remove();
+		});
+	</script><br>
 
 	<div id="rondellCarousel" style="position: absolute; top: 0%;">
 		<img src="images/illusImg/illu-1.jpg">
@@ -80,7 +89,8 @@
 		<img src="images/illusImg/illu-17.jpg">
 		<img src="images/illusImg/illu-18.jpg">
 	</div>
-	
+
 
 </body>
+
 </html>

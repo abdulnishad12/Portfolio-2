@@ -38,6 +38,16 @@
 .rondell-control{
   opacity: 100;
 }
+
+  .zoom{
+    transform:scale(1);
+    transition: 1s ease-out;
+    overflow:hidden;
+  }
+  .zoom:hover {
+      transform:scale(1.2,1.2)
+      };
+
 /* ----Photo Grid---- */
 
 * {
@@ -94,3 +104,5 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+
+  
