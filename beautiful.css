@@ -40,7 +40,7 @@
 }
 
   .zoom{
-    transform:scale(1);
+    transform:scale(0.9);
     transition: 1s ease-out;
     overflow:hidden;
   }
@@ -48,6 +48,9 @@
       transform:scale(1.2,1.2)
       };
 
+  iframe{
+    box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.3);
+  }
 /* ----Photo Grid---- */
 
 * {
