@@ -31,43 +31,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
-
 	<link rel="stylesheet" type="text/css" href="beautiful.css">
 
 	<!-- BX Slider -->
 	<script>
 		$(document).ready(function () {
-			$('.slider').bxSlider();
-			mode: fade;
-			adaptiveHeight: true;
-			slideWidth: 600;
+			$('.slider').bxSlider(
+				{
+					adaptiveHeight: 'true',
+					slideWidth: 1200,
+					responsive: 'true',
+				});
 		});
 	</script>
-
 </head>
 
-
 <body>
-
 	<script src="header.js"></script>
+
 	<script>
 		$('a:contains("Photography")').addClass("active");
 	</script>
 
-	<!--	<div class="header">
-		<p>Photography</p>
-		<hr>-->
-	</div>
-
-	<div class="slider" style="display: flex; align-items: center;">
-		<div><img class="photoImg" src="images\photoImg\1.jpg"></div>
-		<div><img class="photoImg" src="images\photoImg\2.jpg"></div>
-		<div><img class="photoImg" src="images\photoImg\3.jpg "></div>
-		<div><img class="photoImg" src="images\photoImg\4.jpg "></div>
-		<div><img class="photoImg" src="images\photoImg\5.jpg "></div>
-		<div><img class="photoImg" src="images\photoImg\6.jpg "></div>
-		<div><img class="photoImg" src="images\photoImg\7.jpg "></div>
-		<div><img class="photoImg" src="images\photoImg\8.jpg "></div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<div class="slider" style="display: flex;">
+					<div><img class="photoImg img-fluid" src="images\photoImg\1.jpg"></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\2.jpg"></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\3.jpg "></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\4.jpg "></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\5.jpg "></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\6.jpg "></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\7.jpg "></div>
+					<div><img class="photoImg img-fluid" src="images\photoImg\8.jpg "></div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 

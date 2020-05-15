@@ -6,11 +6,13 @@
     }
 
     a{
-      color:#A8A8A8;
+      color:rgb(194, 194, 194);
     }
+
     a:hover{
-      color:#4F4F4F;
+      color:rgb(51, 51, 51);
       text-decoration: none;
+      transition: 500ms;
     }
 
 .imgShadow{
@@ -22,7 +24,7 @@
   text-shadow:5px 5px 10px grey;
 }
 .active {
-    color:black; 
+    color:black;
   }
 
   hr{
@@ -35,22 +37,49 @@
   width:1500px;
 }
 
+#profile {
+      color:white;
+      font-family: 'Noto Serif TC', Serif;
+    }
+
+.saySomething {
+margin-top:100px;
+}
+
+@media (max-width:988px){
+  .saySomething{margin-top: 0px;}
+}
+
+
 .rondell-control{
   opacity: 100;
 }
 
+ /*logo page zoom effect*/
   .zoom{
     transform:scale(0.9);
     transition: 1s ease-out;
     overflow:hidden;
   }
   .zoom:hover {
-      transform:scale(1.2,1.2)
+      transform: scale(1.1,1.1);
+      transition: 1s ease-out;
       };
+
+  /*Ad page zoom effect*/
+  .zoom2{
+    transform:scale(1);
+  }
+
+  .zoom2:hover {
+      transform:scale(0.98);
+      transition: 500ms ease-out;
+      }
 
   iframe{
     box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.3);
   }
+
 /* ----Photo Grid---- */
 
 * {
@@ -107,5 +136,4 @@ body {
     flex: 100%;
     max-width: 100%;
   }
-
-  
+}

@@ -38,12 +38,11 @@
 </head>
 
 
-<body>
+<body style="overflow-y: hidden;">
 
 	<script src="header.js"></script>
 	<script>
 		$('a:contains("Illustration")').addClass("active");
-
 	</script>
 
 	<script type="text/javascript">
@@ -51,7 +50,6 @@
 			$("#rondellCarousel > *").rondell({
 				preset: "carousel",
 				center: { left: 700, top: 500 },
-				//size:{ width: 700,height:500},
 				radius: { x: 280, y: 0 },
 				lightbox: { enabled: false },
 				itemProperties: {
@@ -68,27 +66,35 @@
 				}
 			});
 			$(".rondell-shift-left,.rondell-shift-right").remove();
-			$(".rondell-shift-left,.rondell-shift-right").remove();
 		});
 	</script><br>
 
-	<div id="rondellCarousel" style="position: absolute; top: 0%; left:50%; margin-left:-700px;">
-		<img src="images/illusImg/illu-1.jpg">
-		<img src="images/illusImg/illu-3.jpg">
-		<img src="images/illusImg/illu-4.jpg">
-		<img src="images/illusImg/illu-5.jpg">
-		<img src="images/illusImg/illu-7.jpg">
-		<img src="images/illusImg/illu-8.jpg">
-		<img src="images/illusImg/illu-9.jpg">
-		<img src="images/illusImg/illu-10.jpg">
-		<img src="images/illusImg/illu-11.jpg">
-		<img src="images/illusImg/illu-12.jpg">
-		<img src="images/illusImg/illu-13.jpg">
-		<img src="images/illusImg/illu-14.jpg">
-		<img src="images/illusImg/illu-15.jpg">
-		<img src="images/illusImg/illu-16.jpg">
-		<img src="images/illusImg/illu-17.jpg">
-		<img src="images/illusImg/illu-18.jpg">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div id="rondellCarousel" style="position: absolute; margin-top: -110px; left:50%; margin-left:-700px;">
+					<img class="img-fluid" src="images/illusImg/illu-3.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-1.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-4.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-5.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-7.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-8.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-9.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-10.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-11.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-12.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-13.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-14.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-15.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-16.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-17.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-18.jpg">
+					<img class="img-fluid" src="images/illusImg/illu-19.png">
+					<img class="img-fluid" src="images/illusImg/illu-20.jpg">
+				</div>
+			</div>
+		</div>
 	</div>
 
 
